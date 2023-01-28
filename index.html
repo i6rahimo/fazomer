@@ -112,6 +112,72 @@
                     <div class="swiper-button-next"></div>
                   </div>
            </section>
+           
+           <section class="bid">
+                <h2 class="bid__title section__title">или</h2>
+                <div class="bid__wrapper container">
+                    <form action="" class="bid__form">
+                        <p class="bid__form-title">оставьте заявку <br>
+                            на ремонт</p>
+                        <div class="bid__form-inner">
+                            <input class="bid__form-input" type="text" placeholder="Ваше имя">
+                            <input class="bid__form-input" type="text" id="phone" placeholder="Номер телефона">
+                            <input class="bid__form-input" type="text" placeholder="Что необходимо отремонтировать">
+                            <label class="bid__form-label" for="checkbox">
+                                <input class="bid__form-checkbox" type="checkbox" name="" id="checkbox">
+                                Даю согласие на обработку персональных данных
+                            </label>
+                        </div>
+                        <button class="bid__form-btn">Отправить</button>
+                    </form>
+                    <div class="bid__content">
+                        <span class="bid__content-headline">свяжитесь <br>
+                            с менеджером <br>
+                            напрямую</span>
+                        <p class="bid__content-text">Профессиональное оборудование бывает проблематично доставить в мастерскую, поэтому наши специалисты работают в основном на выезд. <br>
+                            <span> Позвоните нам, чтобы вызвать мастера 
+                            и мы согласуем удобное для вас время. </span>
+                            Специалист возьмет с собой все необходимые расходники, поэтому сможет отремонтировать определенный спектр неисправностей прямо при вас.</p>
+                        <a class="bid__content-tel" href="tel:+">+ 8 999 999 99 99</a>
+                    </div>
+                </div>
+           </section>
+           <section class="stage">
+            <h2 class="stage__title section__title">Этапы:</h2>
+            <div class="stage__wrapper container">
+                <!-- <div class="stage__steps"> -->
+                    <div class="stage__step step-one">
+                        <span class="stage__step-number">01</span>
+                        <p>Предугадываем причины <br> <span>возникновения неисправности по симптомам поломки;</span></p>
+                    </div>
+                    <div class="stage__step step-two">
+                        <span class="stage__step-number">02</span>
+                        <p>Проводим диагностику <br> <span>в течение нескольких часов;</span></p>
+                    </div>
+                    <div class="stage__step step-three">
+                        <span class="stage__step-number">03</span>
+                        <p>Рассчитываем окончательную стоимость <br><span>работ и подписыва ем договор;</span></p>
+                    </div>
+                    <div class="stage__step step-four">
+                        <span class="stage__step-number">04</span>
+                        <p>Производим ремонт неисправностей <br> <span>и попутно определяем общее состояние прибора (указываем, какие детали приходят в износ и, при необходимости, производим замену, что избавит вас от лишних переплат в будущем);</span></p>
+                    </div>
+                    <div class="stage__step step-five">
+                        <span class="stage__step-number">05</span>
+                        <p>Предоставляем официальную гарантию <br><span>на ремонт, так как выполняем все работы при помощи современного оборудования и оригинальных деталей;</span></p>
+                    </div>
+                    
+                    <div class="stage__step step-six">
+                        <span class="stage__step-number">06</span>
+                        <p>Производим тестовый запуск <br><span>и предоставляем акт о ремонте.</span></p>
+                    </div>
+                <!-- </div> -->
+                <img class="stage__img step-img" src="assets/img/stage-bg.png" alt="Этапы рвботы">
+                <!-- <div class="stage__right">
+                </div> -->
+                <p class="stage__right-text explain">*все работы по ремонту промышленной электроники происходят с полной проверкой всех функций устройства, а также его готовности к работе в разных режимах напряжения.</p>
+            </div>
+           </section>
         </main>
 
         <!--==================== FOOTER ====================-->
@@ -122,6 +188,7 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
         <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/inputmask.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>

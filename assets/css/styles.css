@@ -236,20 +236,11 @@ button {
 .swiper {
   width: 1752px;
   max-width: 100%;
-  margin-left: 162px;
+  margin-left: 135px;
+  margin-top: -50px;
   position: relative;
 }
 
-/* .swiper::before {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 0;
-  width: 400px;
-  height: 600px;
-  background-color: rgba(24, 24, 24, 0.24);
-  z-index: 9;
-} */
 .swiper-slide {
   padding: 161px 56px 133px;
 }
@@ -267,7 +258,6 @@ button {
 }
 .swiper-slide-next {
   background-image: url('../img/s2.png');
-  /* background-color: red; */
 }
 
 .swiper-slide p {
@@ -309,4 +299,195 @@ button {
   content: url('../img/s-arrow.svg');
   position: relative;
   bottom: 5px;
+}
+/* BID */
+
+.bid {
+  position: relative;
+  background-color: var(--second-color);
+  padding: 180px 0 170px;
+  margin: 102px 0 0;
+}
+.bid__title {
+  position: absolute;
+  right: -50px;
+  top: 53px;
+}
+.bid__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.bid__form-title, .bid__content-headline {
+  font-weight: var(--font-bold);
+  font-size: var(--biggest-font-size);
+  line-height: 105%;
+  color: var(--first-color);
+}
+.bid__form {
+  width: 634px;
+}
+.bid__content {
+  width: 760px;
+}
+.bid__form-input {
+  width: 100%;
+  background: none;
+  border-bottom: 1px solid var(--first-color);
+  padding:11px 0 11px;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+}
+.bid__form-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin: 88px 0 105px;
+}
+.bid__form-input::placeholder {
+  font-weight: var(--font-regular);
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  line-height: 122%;
+}
+
+.bid__form-label {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: var(--font-regular);
+  line-height: 122%;
+  color: var(--first-color);
+}
+
+.bid__form-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--first-color);
+}
+.bid__form-checkbox:checked {
+  background-color: var(--first-color);
+}
+.bid__form-checkbox:focus {
+  border: 2px solid #8B8B8B;
+}
+
+.bid__form-btn {
+  background: none;
+  border: 1px solid var(--first-color);
+  color: var(--first-color);
+  padding: 10px 20px;
+  font-weight: var(--font-regular);
+  font-size: var(--small-font-size);
+  line-height: 122%;
+  transition: all .3s ease;
+  cursor: pointer;
+  width: 174px;
+  display: block;
+  margin-left: auto;
+}
+.bid__form-btn:hover, .bid__form-btn:focus  {
+  background: var(--first-color);
+  color: var(--second-color);
+  transition: all .3s ease;
+}
+
+
+.bid__content-text {
+  margin: 45px 0 45px;
+  color: var(--light-white);
+}
+
+.bid__content-text span {
+  color: var(--first-color);
+}
+.bid__content-tel {
+  color: var(--first-color);
+  font-weight: var(--font-bold);
+  text-decoration-line: underline;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* STAGE */
+.stage {
+  position: relative;
+  margin: 88px 0 0;
+}
+.stage__steps {
+  /* display: flex; */
+  /* flex-direction: column; */
+  gap: 20px;
+}
+.stage__wrapper {
+  /* display: flex; */
+  align-items: flex-start;
+}
+.stage__step {
+  display: flex;
+  gap: 47px;
+}
+.stage__step p {
+  font-weight: var(--font-bold);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+  line-height: 105%;
+}
+.stage__step span {
+  font-weight: var(--font-regular);
+  color: var(--light-white);
+  line-height: 122%;
+}
+.stage__step-number.stage__step-number {
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    color: var(--first-color);
+    background: var(--second-color);
+    border-radius: 100%;
+    padding: 23px 23px;
+    font-size: var(--normal-font-size);
+    position: relative;
+    bottom: 30px;
+}
+
+.stage__wrapper {
+  display: grid;
+  grid-template-areas:
+  "one img img"
+  "two img img"
+  "three img img"
+  "four four four"
+  "five explain explain"
+  "six explain explain"
+}
+.step-one {
+  grid-area: one;
+}
+.step-two {
+  grid-area: two;
+}
+.step-three {
+  grid-area: three;
+}
+.step-four {
+  grid-area: four;
+}
+.step-five {
+  grid-area: five;
+}
+.step-six {
+  grid-area: six;
+}
+.step-img {
+  grid-area: img;
+  position: relative;
+  bottom: 100px;
+}
+.explain {
+  grid-area: explain;
 }
