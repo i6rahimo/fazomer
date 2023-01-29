@@ -666,6 +666,46 @@ button {
     justify-content: center;
     gap: 30px;
   }
+  .stage {
+    margin: 0 0 0;
+  }
+  .stage__title {
+    top: 0;
+  }
+  .stage__wrapper {
+    grid-template-areas: 
+      "one   one one" 
+      "two   two two" 
+      "three three three  " 
+      "four  four  four   " 
+      "five  five  five" 
+      "six   six   six"
+      "img img explain"
+      "img img explain"
+  }
+  .step-two {
+    height: auto;
+  }
+  .step-one {
+    height: auto;
+  }
+  .step-img {
+    top: 0;
+    left: 0;
+  }
+  .stage__step-number.stage__step-number {
+    width: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .stage__step {
+    gap: 10px;
+  }
+  :root {
+  --h2-font-size: 135px;
+  }
 }
 
 @media  (max-width: 769px) {
@@ -725,7 +765,7 @@ button {
     --body-font: 'Montserrat', sans-serif;
     --biggest-font-size: 40px;
     --h1-font-size: 40px;
-    --h2-font-size: 165px;
+    --h2-font-size: 105px;
     --normal-font-size: 24px;
     --small-font-size: 18px;
   
