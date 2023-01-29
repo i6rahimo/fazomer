@@ -52,7 +52,16 @@ const commentSwiper = new Swiper('.comment__swiper', {
     nextEl: '.comment__swiper-button-next',
     prevEl: '.comment__swiper-button-prev'
   },
-  
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 35,
+    },
+    900: {
+      slidesPerView: 2,
+    },
+  }
 });
 
 
