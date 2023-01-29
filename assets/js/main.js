@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', (event) => {
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -32,14 +34,18 @@ const swiper = new Swiper('.swiper', {
     }
     
 });
-
-
-const tel = document.getElementById("phone");
-
-var im = new Inputmask("+7-(999)-999-99-99");
-im.mask(tel);
-
-
+try  {
+  
+  function inputMask()  {
+    const tel = document.getElementById("phone");
+    
+    var im = new Inputmask("+7-(999)-999-99-99");
+    im.mask(tel);  
+  }
+  
+  inputMask()
+} catch(error) {
+}
 
 const commentSwiper = new Swiper('.comment__swiper', {
   // Optional parameters
@@ -66,3 +72,4 @@ const commentSwiper = new Swiper('.comment__swiper', {
 });
 
 
+});

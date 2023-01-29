@@ -645,7 +645,41 @@ button {
 }
 
 
+/* SERVICE */
+.main__header {
+  background: rgba(0, 0, 0, 0.7);
+}
+.main__header-wrapper {
+  background: rgba(0, 0, 0, 0.7);
+  width: 1720px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 15px;
+}
+.main__header-logo {
+  flex: 1 1 50%;
+}
+.header__nav {
+  width: 100%;
+}
+.header__ul {
+  display: flex;
+  justify-content: space-between;
+}
 
+.header__link {
+  color: var(--first-color);
+  font-weight: var(--font-regular);
+  line-height: 122%;
+  font-size: var(--normal-font-size);
+}
 @media  (max-width: 1500px) {
   .about {
     flex-wrap: wrap;
