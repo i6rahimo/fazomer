@@ -106,6 +106,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding:  0 30px 0 0;
+  gap: 10px;
 }
  
 .header__location {
@@ -195,7 +197,9 @@ button {
   box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 0 50px;
 }
-
+.about__right-img img {
+  width: 100%;  
+}
 .about__right-logo span {
   font-size: var(--biggest-font-size);
   color: var(--first-color);
@@ -258,6 +262,9 @@ button {
 }
 .swiper-slide-next {
   background-image: url('../img/s2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .swiper-slide p {
@@ -416,16 +423,17 @@ button {
 /* STAGE */
 .stage {
   position: relative;
-  margin: 88px 0 0;
+  margin: -180px 0 0;
 }
 .stage__steps {
-  /* display: flex; */
-  /* flex-direction: column; */
   gap: 20px;
 }
 .stage__wrapper {
-  /* display: flex; */
   align-items: flex-start;
+}
+.stage__title {
+  position: relative;
+  top: 280px;
 }
 .stage__step {
   display: flex;
@@ -457,19 +465,29 @@ button {
 
 .stage__wrapper {
   display: grid;
+  gap: 20px;
   grid-template-areas:
+  "empty img img"
   "one img img"
   "two img img"
-  "three img img"
+  "three three three"
   "four four four"
-  "five explain explain"
-  "six explain explain"
+  "five five explain"
+  "six six explain";
+  position: relative;
+  /* bottom: 250px; */
+}
+.empty {
+  grid-area: empty;
+  height: 250px;
 }
 .step-one {
   grid-area: one;
+  height: 50px;
 }
 .step-two {
   grid-area: two;
+  height: 10px;
 }
 .step-three {
   grid-area: three;
@@ -486,8 +504,238 @@ button {
 .step-img {
   grid-area: img;
   position: relative;
-  bottom: 100px;
+  top: 100px;
+  left: 100px;
 }
 .explain {
   grid-area: explain;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-regular);
+  line-height: 122%;
+  color: var(--light-white);
+  text-align: end;
+  max-width: 457px;
+  margin-top: auto;
+}
+
+
+
+
+/* COMMENT */
+
+.comment__swiper {
+  width: 100%;
+  overflow: hidden;
+}
+.comment__swiper-wrapper{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 116px 0 0;
+}
+.comment__swiper-slide {
+  flex-shrink: 0;
+  background: var(--second-color);
+  padding: 71px 64px 75px;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.comment__slide-quotes {
+  width: 73px;
+  height: 73px;
+  margin: 0 0 51px;
+}
+.comment__slide-title {
+  font-weight: var(--font-bold);
+  font-size: var(--normal-font-size);
+  line-height: 105%;
+  color: var(--first-color);
+}
+
+.comment__slide-subtitle.comment__slide-subtitle {
+  font-weight: var(--font-regular);
+  font-size: var(--small-font-size);
+  line-height: 122%;
+  color: var(--light-white);
+  margin: 32px 0 44px;
+}
+.comment__slide-avtor {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: auto;
+}
+.comment__slide-photo {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+}
+.comment__slide-name {
+  font-weight: var(--font-bold);
+  font-size: var(--small-font-size);
+  line-height: 105%;
+  color: var(--first-color);
+}
+.comment__slide-city.comment__slide-city {
+  font-weight: var(--font-regular);
+  font-size: var(--small-font-size);
+  line-height: 122%;
+  color: var(--light-white);
+}
+
+.comment__title {
+  text-align: end;
+  position: relative;
+  top: 80px;
+  z-index: -1;
+}
+
+.comment__swiper-button-next, .comment__swiper-button-prev {
+  cursor: pointer;
+}
+.comment__swiper-btns {
+  display: flex;
+  gap: 54px;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--second-color);
+  margin: 104px 0 0;
+}
+
+.footer__wrapper {
+  padding: 78px 15px 91px;
+}
+.footer__up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__ul {
+  display: flex;
+  gap: 70px;
+}
+.footer__link {
+  font-weight: var(--font-bold);
+  color: var(--first-color);
+}
+.footer__social {
+  display: flex;
+  gap: 20px;
+}
+
+
+.footer__down {
+  margin: 67px 0 0;
+  color: var(--light-white);
+  font-size: var(--small-font-size);
+  line-height: 122%;
+  font-weight:var(--font-regular);
+  
+}
+
+
+
+@media  (max-width: 1500px) {
+  .about {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .swiper {
+    margin-left: 0;
+  }
+}
+
+@media  (max-width: 769px) {
+  .header {
+    padding: 50px  15px;
+  }
+  .hero__middle {
+    margin: 183px 22px 0 15px;
+  }
+  .header__logo {
+    width: 200px;
+    height: 50px;
+  }
+  .about__right-up {
+    padding: 20px;
+  }
+  .about__right-items {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .about {
+    gap: 30px;
+  }
+  .about__left {
+    max-width: 100%;
+  }
+  .about__left-title {
+    word-break: break-all;
+  }
+  .about__right-logo  span{
+    font-size: 40px;
+  }
+  .about__right-logo img{
+    width: 200px;
+    height: 50px;
+  }
+  .swiper-slide {
+    padding: 161px 10px ;
+  }
+  :root {
+
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: #F5F5F5;
+    --second-color: #181818;
+    --light-white: #8B8B8B;
+    
+    
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Montserrat', sans-serif;
+    --biggest-font-size: 40px;
+    --h1-font-size: 40px;
+    --h2-font-size: 165px;
+    --normal-font-size: 24px;
+    --small-font-size: 18px;
+  
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+  }
+}
+@media  (max-width: 576px) {
+  :root {
+
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: #F5F5F5;
+    --second-color: #181818;
+    --light-white: #8B8B8B;
+    
+    
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Montserrat', sans-serif;
+    --biggest-font-size: 30px;
+    --h1-font-size: 30px;
+    --h2-font-size: 165px;
+    --normal-font-size: 18px;
+    --small-font-size: 24px;
+  
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+  }
 }
