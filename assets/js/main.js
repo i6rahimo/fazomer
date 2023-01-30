@@ -5,6 +5,7 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 5,
+    speed: 500,
     // spaceBetween: 25,
     // centeredSlides: true,
     initialSlide: 0,
@@ -34,18 +35,16 @@ const swiper = new Swiper('.swiper', {
     }
     
 });
-try  {
   
   function inputMask()  {
     const tel = document.getElementById("phone");
     
     var im = new Inputmask("+7-(999)-999-99-99");
     im.mask(tel);  
-  }
   
+  }  
   inputMask()
-} catch(error) {
-}
+
 
 const commentSwiper = new Swiper('.comment__swiper', {
   // Optional parameters
