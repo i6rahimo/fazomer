@@ -209,7 +209,7 @@ button {
 }
 .about__right-logo {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .about__right-items {
   display: flex;
