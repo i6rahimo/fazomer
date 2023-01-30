@@ -17,3 +17,4 @@ function burgerMenu() {
   
   }  
   inputMask()
+  
