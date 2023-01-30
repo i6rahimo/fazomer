@@ -689,7 +689,8 @@ button {
 
 .main__hero img{
   width: 100%;
-  height: 100%;
+  min-height: 690px;
+  object-fit: cover;
 }
 .burger {
   display: none;
@@ -724,6 +725,90 @@ button {
   transition: transform .3s ease;
     
 }
+
+.service__about {
+  display: flex;
+  justify-content: space-between;
+  gap: 53px;
+}
+.service__about-up {
+  background-color: var(--second-color);
+  padding: 36px 41px 49px 228px;
+}
+.service__about-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 63px;
+}
+.service__about-up_title {
+  font-weight: var(--font-bold);
+  font-size: var(--biggest-font-size);
+  line-height: 105%;
+  color: var(--first-color);
+}
+
+.service__down-text {
+  font-size: var(--small-font-size);
+  padding: 16px 74px 0 50px;
+}
+.service__about-up_subtitle {
+  font-weight: var(--font-regular);
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+  line-height: 122%;
+}
+.service__about-up_subtitle span {
+  font-weight: var(--font-bold);
+}
+
+.service__down-items {
+  display: flex;
+  flex-direction: column;
+  width: 859px;
+  max-width: 100%;
+}
+.service__down-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-regular);
+  color: var(--second-color);
+  line-height: 122%;
+  padding: 10px 74px 10px 50px;
+}
+
+
+.service__down-item:nth-child(1) {
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--first-color);
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+}
+.service__down-item:nth-child(2) {
+  background: #D9D9D9;
+}
+.service__down-item:nth-child(3) {
+  background: #F5F5F5;
+}
+.service__down-item:nth-child(4) {
+  background: #D9D9D9;
+}
+.service__about-text {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-regular);
+  line-height: 122%;
+  max-width: 790px;
+}
+.service__about-text span {
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: #181818;
+  display: block;
+  margin-left: 20px;
+}
+
 @media  (max-width: 1500px) {
   .about {
     flex-wrap: wrap;
