@@ -53,6 +53,8 @@ const commentSwiper = new Swiper('.comment__swiper', {
   wrapperClass: 'comment__swiper-wrapper',
   slideClass: 'comment__swiper-slide',
   slidesPerView: 2,
+  speed: 500,
+
   spaceBetween: 75,
   navigation: {
     nextEl: '.comment__swiper-button-next',
