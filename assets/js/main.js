@@ -14,7 +14,7 @@ const swiper = new Swiper('.swiper', {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       576: {
         slidesPerView: 3,
@@ -73,13 +73,3 @@ const commentSwiper = new Swiper('.comment__swiper', {
 });
 
 
-function burgerMenu() {
-  const burgerBtn = document.querySelector('.burger');
-  const menu = document.querySelector('.header__nav');
-  
-  burgerBtn.addEventListener('click', ()=> {
-    menu.classList.toggle('active');
-    burgerBtn.classList.toggle('active')
-  })
-}
-burgerMenu()
