@@ -692,8 +692,8 @@ button {
 }
 
 .main__hero img{
+  height: 800px;
   width: 100%;
-  min-height: 690px;
   object-fit: cover;
 }
 .burger {
@@ -846,7 +846,7 @@ button {
   margin:  47px auto 0;
   font-size: var(--small-font-size);
   line-height: 122%;
-  padding: 0 15px;
+  padding: 0 30px;
   
 }
 .main__about-text span {
@@ -873,17 +873,18 @@ button {
   .service__about-up {
     width: 100vw;
     max-width: 100vw;
+    padding: 36px 30px;
   }
   .service__about-wrapper {
     max-width: 100%;
   }
   .service__about-down {
-    margin: 0 15px;
+    margin: 0 30px;
     max-width: 100%;
   }
   .service__about-text {
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 30px;
   }
 }
 
@@ -1177,6 +1178,9 @@ button {
   }
   .swiper-slide-next .swiper-slide-line {
     background: var(--second-color);
+  }
+  .main__header-logo  img{
+    width: 200px;
   }
 }
 @media  (max-width: 390px) {
