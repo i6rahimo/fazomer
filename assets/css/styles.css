@@ -14,10 +14,12 @@
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Montserrat', sans-serif;
   --biggest-font-size: 50px;
+  --middle-font-size: 40px;
   --h1-font-size: 70px;
   --h2-font-size: 165px;
   --normal-font-size: 32px;
   --small-font-size: 24px;
+  --smaller-font-size: 19px;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -25,18 +27,6 @@
   --font-bold: 700;
 }
 
-/* Responsive typography */
-/* @media screen and (min-width: 1024px) {
-  :root {
-    --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-  }
-} */
 
 /*=============== BASE ===============*/
 * {
@@ -176,15 +166,15 @@ button {
 }
 .about__left-title {
   font-weight: var(--font-bold);
-  font-size: var(--biggest-font-size);
+  font-size: var(--middle-font-size);
   color: var(--second-color);
   line-height: 105%;
-  margin: 0 0 30px;
+  margin: 0 0 53px;
 }
 
 .about__left-subtitle {
   font-weight: var(--font-regular);
-  font-size: var(--normal-font-size);
+  font-size: var(--smaller-font-size);
   line-height: 122%;
   color: var(--light-white)
 }
@@ -224,7 +214,7 @@ button {
 }
 .about__right-item span {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   font-weight: var(--font-regular);
   line-height: 122%;
   color: var(--first-color);
@@ -333,7 +323,7 @@ button {
 }
 .bid__form-title, .bid__content-headline {
   font-weight: var(--font-bold);
-  font-size: var(--biggest-font-size);
+  font-size: var(--normal-font-size);
   line-height: 105%;
   color: var(--first-color);
 }
@@ -360,7 +350,7 @@ button {
 .bid__form-input::placeholder {
   font-weight: var(--font-regular);
   color: var(--first-color);
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   line-height: 122%;
 }
 
@@ -371,6 +361,7 @@ button {
   font-size: 20px;
   font-weight: var(--font-regular);
   line-height: 122%;
+  font-size: var(--smaller-font-size);
   color: var(--first-color);
 }
 
@@ -413,10 +404,15 @@ button {
 .bid__content-text {
   margin: 45px 0 45px;
   color: var(--light-white);
+  font-size: var(--smaller-font-size);
+  max-width: 600px;
+  /* max-width: 100%; */
 }
 
 .bid__content-text span {
   color: var(--first-color);
+  margin: 45px 0;
+  display: block;
 }
 .bid__content-tel {
   color: var(--first-color);
@@ -455,6 +451,7 @@ button {
 .stage__step span {
   font-weight: var(--font-regular);
   color: var(--light-white);
+  font-size: var(--smaller-font-size);
   line-height: 122%;
 }
 .stage__step-number.stage__step-number {
@@ -516,7 +513,7 @@ button {
 }
 .explain {
   grid-area: explain;
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   font-weight: var(--font-regular);
   line-height: 122%;
   color: var(--light-white);
@@ -556,14 +553,16 @@ button {
 }
 .comment__slide-title {
   font-weight: var(--font-bold);
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
   line-height: 105%;
   color: var(--first-color);
 }
-
+.comment__slide.swiper-slide-active {
+  background: var(--second-color);
+}
 .comment__slide-subtitle.comment__slide-subtitle {
   font-weight: var(--font-regular);
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   line-height: 122%;
   color: var(--light-white);
   margin: 32px 0 44px;
@@ -632,6 +631,7 @@ button {
 .footer__link {
   font-weight: var(--font-bold);
   color: var(--first-color);
+  font-size: var(--smaller-font-size);
 }
 .footer__social {
   display: flex;
@@ -642,10 +642,9 @@ button {
 .footer__down {
   margin: 67px 0 0;
   color: var(--light-white);
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   line-height: 122%;
   font-weight:var(--font-regular);
-  
 }
 
 
@@ -688,7 +687,7 @@ button {
   color: var(--first-color);
   font-weight: var(--font-regular);
   line-height: 122%;
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
 }
 
 .main__hero img{
@@ -752,7 +751,7 @@ button {
 }
 .service__about-up_title {
   font-weight: var(--font-bold);
-  font-size: var(--biggest-font-size);
+  font-size: var(--middle-font-size);
   line-height: 105%;
   color: var(--first-color);
   margin-bottom: 23px;
@@ -766,7 +765,7 @@ button {
 }
 .service__about-up_subtitle {
   font-weight: var(--font-regular);
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   color: var(--first-color);
   line-height: 122%;
   width: 672px;
@@ -793,12 +792,17 @@ button {
   padding: 10px 74px 10px 50px;
 }
 
-
+.service__down-item p {
+  font-size: var(--smaller-font-size);
+}
 .service__down-item:nth-child(1) {
   background: rgba(0, 0, 0, 0.7);
   color: var(--first-color);
   font-weight: var(--font-bold);
   text-transform: uppercase;
+}
+.service__down-item:nth-child(1) p {
+  font-size: var(--small-font-size);
 }
 .service__down-item:nth-child(2) {
   background: #D9D9D9;
@@ -810,7 +814,7 @@ button {
   background: #D9D9D9;
 }
 .service__about-text {
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   font-weight: var(--font-regular);
   line-height: 122%;
   max-width: 790px;
@@ -821,6 +825,13 @@ button {
   margin-left: 15px;
   display: flex;
   align-items: center;
+  padding: 5px 0;
+}
+.service__about-text  span:nth-child(2) {
+  margin-top: 25px;
+}
+.service__about-text  span:nth-child(6) {
+  margin-bottom: 25px;
 }
 .service__about-text span::before {
   content: '';
@@ -840,11 +851,12 @@ button {
 }
 .main__footer .footer__link {
   color: var(--second-color);
+  font-size: var(--small-font-size);
 }
 .main__about-text {
   max-width: 1529px;
   margin:  47px auto 0;
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   line-height: 122%;
   padding: 0 15px;
   
@@ -1081,6 +1093,7 @@ button {
     --h2-font-size: 115px;
     --normal-font-size: 16px;
     --small-font-size: 18px;
+    --smaller-font-size: 14px;
   
     /*========== Font weight ==========*/
     --font-regular: 400;
@@ -1128,6 +1141,7 @@ button {
     --h2-font-size: 45px;
     --normal-font-size: 18px;
     --small-font-size: 14px;
+    --smaller-font-size: 12px;
     
     /*========== Font weight ==========*/
     --font-regular: 400;
