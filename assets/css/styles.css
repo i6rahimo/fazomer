@@ -162,7 +162,7 @@ button {
   display: flex;
   justify-content: space-between;
   margin: 119px auto 0;
-  gap: 122px;
+  gap: 94px;
 }
 .about__left {
   max-width: 721px;
@@ -179,7 +179,7 @@ button {
 .about__left-subtitle {
   font-weight: var(--font-regular);
   font-size: var(--smaller-font-size);
-  line-height: 122%;
+  line-height: 150%;
   color: var(--light-white)
 }
 .about_right {
@@ -411,11 +411,12 @@ button {
   font-size: var(--smaller-font-size);
   max-width: 600px;
   /* max-width: 100%; */
+  line-height: 150%;
 }
 
 .bid__content-text span {
   color: var(--first-color);
-  margin: 45px 0;
+  margin: 19px 0;
   display: block;
 }
 .bid__content-tel {
@@ -444,13 +445,15 @@ button {
 }
 .stage__step {
   display: flex;
+  align-items: baseline;
   gap: 47px;
 }
 .stage__step p {
   font-weight: var(--font-bold);
-  font-size: var(--normal-font-size);
+  font-size: var(--small-font-size);
   color: var(--second-color);
-  line-height: 105%;
+  /* line-height: 150%; */
+  max-width: 954px;
 }
 .stage__step span {
   font-weight: var(--font-regular);
@@ -467,20 +470,20 @@ button {
     border-radius: 100%;
     padding: 23px 23px;
     font-size: var(--normal-font-size);
+    font-weight: 500;
     position: relative;
-    bottom: 30px;
 }
 
 .stage__wrapper {
   display: grid;
-  gap: 20px;
+  gap: 50px;
   grid-template-areas:
   "empty img img"
   "one img img"
   "two img img"
   "three three three"
   "four four four"
-  "five five explain"
+  "five five five"
   "six six explain";
   position: relative;
   /* bottom: 250px; */
@@ -491,7 +494,7 @@ button {
 }
 .step-one {
   grid-area: one;
-  height: 50px;
+  height: 0;
 }
 .step-two {
   grid-area: two;
@@ -519,7 +522,7 @@ button {
   grid-area: explain;
   font-size: var(--smaller-font-size);
   font-weight: var(--font-regular);
-  line-height: 122%;
+  line-height: 150%;
   color: var(--light-white);
   text-align: end;
   max-width: 457px;
@@ -660,7 +663,7 @@ button {
   position: fixed;
   top: 0;
   right: 0;
-  padding: 60px 15px;
+  height: 105px;
 }
 .main__header-wrapper {
   /* background: rgba(0, 0, 0, 0.7); */
@@ -762,7 +765,7 @@ button {
 }
 
 .service__down-text {
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   padding: 16px 74px 0 50px;
   width: 859px;
   max-width: 100%;
@@ -771,7 +774,7 @@ button {
   font-weight: var(--font-regular);
   font-size: var(--smaller-font-size);
   color: var(--first-color);
-  line-height: 122%;
+  line-height: 150%;
   width: 672px;
   max-width: 100%;
 }
@@ -861,7 +864,7 @@ button {
   max-width: 1529px;
   margin:  47px auto 0;
   font-size: var(--smaller-font-size);
-  line-height: 122%;
+  line-height: 150%;
   padding: 0 15px;
   
 }
