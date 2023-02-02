@@ -89,7 +89,7 @@ button {
   position: absolute;
   z-index: 1; 
   max-width: 100%;
-  width: 842px;
+  width: 1069px;
   padding: 53px 0 0 100px;
 }
 .header__wrapper {
@@ -114,7 +114,7 @@ button {
   justify-content: space-between;
 }
 .hero__left, .hero__middle {
-  margin: 283px 0 0;
+  margin: 290px 0 0;
 }
 .hero__left img{
   object-fit: cover;
@@ -146,6 +146,10 @@ button {
   max-width: 344px;
   margin-left: auto;
   text-align: end;
+}
+.hero__right {
+  height: 100vh;
+  
 }
 .hero__right img{
   height: 100%;
