@@ -112,7 +112,6 @@ button {
   display: flex;
   background-color: var(--second-color);
   justify-content: space-between;
-  /* height: 100vh; */
 }
 .hero__left, .hero__middle {
   margin: 290px 0 0;
@@ -123,7 +122,7 @@ button {
   height: 622px;
 }
 .hero__middle {
-  margin: 290px 82px 160px 66px;
+  margin: 290px 82px 120px 66px;
 }
 .hero__middle-headline {
   font-size: var(--normal-font-size);
@@ -330,9 +329,6 @@ button {
 }
 .swiper-slide-next.hover .swiper-slide-line {
   background: var(--second-color);
-}
-.swiper-slide-next:hover {
-  background-image: ;
 }
 /* BID */
 
