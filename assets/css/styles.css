@@ -252,13 +252,10 @@ button {
   background-repeat: no-repeat;
   user-select: none;
 }
-
 .swiper-slide-next .swiper-slide-line {
   background-color: var(--first-color);
 }
-.swiper-slide.active {
-  background-color: red;
-}
+
 .swiper-slide-next {
   background-image: url('../img/s2.png');
   background-size: cover;
@@ -266,6 +263,21 @@ button {
   background-repeat: no-repeat;
 }
 
+.swiper-slide.hover {
+  background-image: url('../img/s2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+.swiper-slide.hover p {
+  color: var(--first-color);
+}
+.swiper-slide.hover span {
+  color: var(--first-color);
+}
+.swiper-slide.hover .swiper-slide-line {
+  background-color: var(--first-color);
+}
 .swiper-slide p {
   font-size: var(--normal-font-size);
   font-weight: var(--font-bold);
@@ -306,6 +318,21 @@ button {
   content: url('../img/s-arrow.svg');
   position: relative;
   bottom: 5px;
+}
+.swiper-slide-next.hover {
+  background-image: none ;
+}
+.swiper-slide-next.hover p {
+  color: var(--second-color);
+}
+.swiper-slide-next.hover span {
+  color: var(--second-color);
+}
+.swiper-slide-next.hover .swiper-slide-line {
+  background: var(--second-color);
+}
+.swiper-slide-next:hover {
+  background-image: ;
 }
 /* BID */
 

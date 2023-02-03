@@ -71,6 +71,30 @@ const commentSwiper = new Swiper('.comment__swiper', {
     },
   }
 });
+
+
+
+function serviceSlide() {
+  const slides = document.querySelectorAll('.swiper-slide');
+  const swiperNext = document.querySelectorAll('.swiper-slide-next');
+  // console.log(swiperNext);
+  slides.forEach(e => {
+    e.addEventListener('mouseover', ()=> {
+      e.classList.add('hover');
+      swiperNext.forEach(next => {
+        next.classList.add('hover')
+        next.addEventListener('mouseover', ()=> {
+          next.classList.remove('hover')
+        })
+      })
+    })
+    e.addEventListener('mouseout', ()=> {
+      e.classList.remove('hover')
+      swiperNext.forEach(next => {
+        next.classList.remove('hover')
+      })
+    })
+  })
+}
+serviceSlide();
 });
-
-
