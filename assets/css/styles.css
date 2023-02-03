@@ -112,7 +112,7 @@ button {
   display: flex;
   background-color: var(--second-color);
   justify-content: space-between;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .hero__left, .hero__middle {
   margin: 290px 0 0;
@@ -526,7 +526,7 @@ button {
   line-height: 150%;
   color: var(--light-white);
   text-align: end;
-  max-width: 457px;
+  max-width: 497px;
   margin-top: auto;
 }
 
